@@ -4,7 +4,10 @@ body{
     font-family: 'Lato', sans-serif;
     line-height: 1.5;
 }
-
+p{
+    text-decoration: none;
+    color: #3E3D3C;
+}
 /*Main picture*/
 .banner {
     height:600px;
@@ -16,10 +19,11 @@ body{
 }
 
 .banner h2{
-    color: white;
+    color: #3E3D3C;
 }
 
 .banner h4{
+    font-family: 'Merriweather', serif;
     text-align: center;
     font-style: italic;
 }
@@ -68,6 +72,12 @@ body{
 #homeNavItem:hover::after{
     transform: scaleX(1);
 }
+
+#second-nav {position:relative;}
+#second-nav:before {content:""; display:block; position:absolute; left:0; top:0px; width:100%; height:1px; background-color: #d44500; transform:scaleX(0); transform-origin:center right; transition:.45s;}
+#second-nav:after {content:""; display:block; position:absolute; left:0; bottom:0px; width:100%; height:1px; background-color: #d44500; transform:scaleX(0); transform-origin:center left; transition:.45s;}
+#second-nav:hover:before, #second-nav:hover:after {transform:scaleX(1);}
+
 
 /*Article set up*/
 .story{
@@ -133,6 +143,13 @@ body{
     align-items: center;
 }
 
+.list-group-item:hover{
+    background-color: #D44500;
+    border-color: #D44500;
+    color:white;
+    transition: all 1s;
+}
+
 .list-group-item.active{
     background-color: #D44500;
     border-color: #D44500;
@@ -142,6 +159,13 @@ body{
 .profile #footerItem{
     margin-top: -55px;
 }
+
+@keyframes slideacross{
+	0%{position:relative;left:100%;}
+	100%{position:relative; left:0%;}
+}
+
+#info-card{animation:slideacross 1s linear; }
 
 @media screen and (max-width:540px){
     .display-2{font-size: 4.5rem;}
@@ -154,7 +178,8 @@ body{
     #partners-text{padding: -10px 10px; padding-bottom: -10px;} 
     #partners-text{margin:3px;}
 
-    
+    #project-contents{flex-direction: column;}
+    .list-group{padding-bottom: 35px;}
 
     #footerItem{font-size: 1rem;}
     #team-title-box{justify-content: center;}
@@ -178,6 +203,9 @@ body{
     .jumbotron{text-align: center;}
     #partners-text{padding: -10px 10px; padding-bottom: -10px;} 
     #partners-text{margin:3px;}
+
+    #project-contents{flex-direction: column;}
+    .list-group{padding-bottom: 35px;}
 
     #team-title-box{justify-content: center;}
     #team-title{font-size: 2rem;}

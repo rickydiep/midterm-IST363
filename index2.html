@@ -13,6 +13,7 @@
 </head>
 <body>
     <nav class="main navbar navbar-expand-lg navbar-light bg-light">
+            <h2 class="sr-only">Nav Bar</h2>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -21,10 +22,10 @@
                     <a class="navbar-brand" href="index1.html">
                         <img src="images/air-dark.png" width="50" height="50" class="d-inline-block align-top" alt="">
                     </a>
-                    <a class="nav-item nav-link text-dark" href="index1.html">HOME <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link text-dark" href="index2.html">ABOUT</a>
-                    <a class="nav-item nav-link text-dark" href="index3.html">RESEARCH</a>
-                    <a class="nav-item nav-link text-dark" href="index4.html">TEAM</a>
+                    <a id="second-nav" class="nav-item nav-link text-dark" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                    <a id="second-nav" class="nav-item nav-link text-dark" href="index2.html">ABOUT</a>
+                    <a id="second-nav" class="nav-item nav-link text-dark" href="index3.html">RESEARCH</a>
+                    <a id="second-nav" class="nav-item nav-link text-dark" href="index4.html">TEAM</a>
                 </div>
             </div>
     </nav>
@@ -34,7 +35,10 @@
             <div class="container">
                 <div class="jumbotron mt-5">
                     <h1 id="about-headings" class="display-4">Mission</h1>
-                    <p class="lead">This is the mission statement of the A.I.R. Project.</p>
+                    <p class="lead">The AIR Initiative aims to familiarize undergraduate students with the research publication process. Students will be complete 
+                        Collaborative Institutional Training Initiative (CITI) Certification in Human Subjects Research, gain competency in writing grant proposals 
+                        and developing independent research projects. 
+                        </p>
                     <hr class="my-4">
                     <p>Project of the iSchool B.I.T.S. Lab</p>
                     <p class="lead">
@@ -48,11 +52,10 @@
                 </section>
                 <section id="partners-text"class="row pt-2 pb-5 pl-lg-5 pl-md-5 pl-sm-0 pl-xs-0 ">
                         <h2 class="sr-only">partners-text</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque, fugit, impedit harum officia 
-                            velit voluptatum inventore reprehenderit tenetur quam mollitia perferendis iusto quisquam quia voluptatem 
-                            similique hic architecto blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusamus 
-                            sequi amet? Quidem illum similique praesentium doloribus nam, exercitationem optio ad adipisci qui, fugit quod. 
-                            Atque corporis commodi quaerat iste?</p>
+                        <p> Currently the Identity Research Initative partners with the 
+                            <a class="text-dark font-weight-bold"href="http://thecollege.syr.edu/academics/interdisciplinary/Asian-AsianAmerican.html">Asian American Studies Department</a>, the 
+                            <a class="text-dark font-weight-bold"href="http://multicultural.syr.edu/">Office of Multicultural Affairs</a>, 
+                            and <a class="text-dark font-weight-bold"href="http://asia.syr.edu/">Asian Students in America</a>.</p>
                 </section>
             </div>
         </section>
@@ -60,16 +63,17 @@
     <footer class="footer">
         <h2 class="sr-only">Footer Section</h2>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark col-sm-12">
+                    <h2 class="sr-only">Footer Contents</h2>
                     <div id= "footer-contents " class="footer navbar-nav container flex-row align-middle d-flex justify-content-lg-start d-flex justify-content-sm-center d-flex justify-content-md-center">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand">
                             <img id="footer-image" src="images/air.png" width="100" height="100" class="d-inline-block align-top" alt="">
                         </a>
-                        <a id="footerItem" class="nav-item nav-link text-white" href="#"><i class="fas fa-envelope"></i></a>    
-                        <a id="footerItem" class="nav-item nav-link text-white" href="#"><i class="fab fa-facebook"></i> <span class="sr-only">(current)</span></a>
-                        <a id="footerItem" class="nav-item nav-link text-white" href="#"><i class="fab fa-twitter"></i></a>
-                        <a id="footerItem" class="nav-item nav-link text-white" href="#"><i class="fab fa-github"></i></a>
-                        <a id="footerItem" class="nav-item nav-link text-white" href="#"><i class="fab fa-reddit"></i></a>
-                </div>
+                        <a id="footerItem" class="nav-item nav-link text-white" href="mailto:airinitiative@gmail.com"><i class="fas fa-envelope"></i></a>    
+                        <a id="footerItem" class="nav-item nav-link text-white" href="https://www.facebook.com/su.ischool/"><i class="fab fa-facebook"></i> <span class="sr-only">(current)</span></a>
+                        <a id="footerItem" class="nav-item nav-link text-white" href="https://twitter.com/iSchoolSU"><i class="fab fa-twitter"></i></a>
+                        <a id="footerItem" class="nav-item nav-link text-white" href="https://github.com/"><i class="fab fa-github"></i></a>
+                        <a id="footerItem" class="nav-item nav-link text-white" href="https://www.reddit.com/"><i class="fab fa-reddit"></i></a>
+                    </div>
         </nav>
     </footer>
 </body>
