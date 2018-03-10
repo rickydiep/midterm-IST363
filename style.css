@@ -167,9 +167,14 @@ p{
 
 #info-card{animation:slideacross 1s linear; }
 
+@media screen and (max-width:768px){
+    #nav-bar-img{display: none;}
+}
+
 @media screen and (max-width:540px){
     .display-2{font-size: 4.5rem;}
     h4{font-size: 1rem;}
+    #nav-bar-img{display: none;}
     .story h1{text-align: center;}
     #footer-image{height: 50px; width:50px;}
     
@@ -193,6 +198,7 @@ p{
 @media screen and (max-width:375px){
     .display-2{font-size: 4.5rem;}
     h4{font-size: 1rem;}
+    #nav-bar-img{display: none;}
     .navbar-brand{display: none;}
     .story h1{text-align: center;}
     
